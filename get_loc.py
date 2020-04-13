@@ -1,11 +1,11 @@
 import psycopg2 as pg
 import pandas as pd
-import os
-from subprocess import Popen, PIPE
+#import os
+#from subprocess import Popen, PIPE
 import flask
 from flask import request, jsonify, Response
 import numpy
-import re
+#import re
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
