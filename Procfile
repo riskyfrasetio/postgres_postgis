@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT get_loc:app
+web: gunicorn -w 4 -b :$PORT get_loc:app
