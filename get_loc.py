@@ -1,6 +1,6 @@
 import psycopg2 as pg
 import pandas as pd
-#import os
+import os
 #from subprocess import Popen, PIPE
 import flask
 from flask import request, jsonify, Response
@@ -43,6 +43,8 @@ def api_filter():
 	cursor.close()
 	conn.close()
 	#else return Response("not supported".to_json(orient="records"), mimetype='application/json')
-app.run()
+
+port = int(os.environ.get('PORT', 5000))
+app.run(host='0.0.0.0',port=port,debug=True)
 
 
