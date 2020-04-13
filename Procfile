@@ -1,1 +1,1 @@
-web: gunicorn get_loc:app -b 0.0.0.0:8000
+web: gunicorn -b 0.0.0.0:8000 get_loc:app 
