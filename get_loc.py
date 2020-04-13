@@ -7,7 +7,7 @@ from flask import request, jsonify, Response
 import numpy
 #import re
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 @app.errorhandler(404)
