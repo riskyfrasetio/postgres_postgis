@@ -15,7 +15,7 @@ def page_not_found(e):
     return "<h1>404</h1><p>The resource could not be found.</p>", 404
 
 
-@app.route('/api/geotargeting', methods=['GET'])
+@app.route('/geotargeting', methods=['GET'])
 def api_filter():
 	conn=pg.connect(host="ec2-54-80-184-43.compute-1.amazonaws.com",database="d4bkoe4dm09aui", user="qgavnbqrmljnqn", password="ffb43fefa1b21a800addeff21cfca93ca661ae9d1c31924250b25fc75c43f693")
 	cursor=conn.cursor()
